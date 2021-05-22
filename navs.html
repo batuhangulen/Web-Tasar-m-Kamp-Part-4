@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Öğreniyorum</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Bootstrap ile Navs</h1>
+        <h3> Base Nav </h3>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active"> Anasayfa </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> İletişim </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> Galeri </a>
+            </li>
+        </ul>
+        <hr>
+        <h3> Vertical Base Nav </h3>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a href="#" class="nav-link active"> Anasayfa </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> İletişim </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> Galeri </a>
+            </li>
+        </ul>
+        <hr>
+        <h3> Nav Tabs </h3>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link active"> Anasayfa </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> İletişim </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> Galeri </a>
+            </li>
+        </ul>
+        <hr>
+        <h3> Nav Pills </h3>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#" class="nav-link active"> Anasayfa </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> İletişim </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Son Hizmetlerimiz </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Hizmet 1</a>
+                    <a href="#" class="dropdown-item">Hizmet 2</a>
+                    <a href="#" class="dropdown-item">Hizmet 3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> Galeri </a>
+            </li>
+        </ul>
+        <hr>
+        <h3> Küçük Cihazlarda Yatay, Çok Küçüklerde Dikey </h3>
+        <ul class="nav nav-pills flex-column flex-sm-row">
+            <li class="nav-item">
+                <a href="#" class="nav-link active"> Anasayfa </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> İletişim </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> Galeri </a>
+            </li>
+        </ul>
+        <hr>
+        <h3> Nav Tabs </h3>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#anasayfa"class="nav-link active" data-toggle="tab"> Anasayfa </a>
+            </li>
+            <li class="nav-item">
+                <a href="#iletisim" class="nav-link" data-toggle="tab"> İletişim </a>
+            </li>
+            <li class="nav-item">
+                <a href="#galeri" class="nav-link" data-toggle="tab"> Galeri </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="anasayfa" class="tab-pane show active fade">Anasayfa Hakkında Bilgi: Lorem ipsum dolor sit amet.</div>
+            <div id="iletisim" class="tab-pane fade">İletişim Hakkında Bilgi: Lorem ipsum dolor sit amet.</div>
+            <div id="galeri" class="tab-pane fade">Galeri Hakkında Bilgi: Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

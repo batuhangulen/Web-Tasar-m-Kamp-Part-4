@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Öğreniyorum</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center"> Formlar </h1>
+        <h2 class="text-center"> Giriş Formu </h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="email"> E-Mail </label>
+                <input type="text" id="email" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="parola"> Parola </label>
+                <input type="password" id="parola" name="parola" class="form-control">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" id="beniHatirla" name="beniHatirla" class="form-check-input">
+                <label for="beniHatirla" class="form-check-label">Beni Hatırla</label>
+            </div>
+            <button class="btn btn-primary">Giriş Yap</button>
+        </form>
+        <hr>
+        <h2 class="text-center"> Form-Grid </h2>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Adınız">
+                </div>
+                <div class="col">
+                    <input tpye="text" class="form-control" placeholder="Soyadınız">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-5">
+                    <input tpye="text" class="form-control" placeholder="Şehir">
+                </div>
+                <div class="col">
+                    <input tpye="text" class="form-control" placeholder="İlçe">
+                </div>
+                <div class="col">
+                    <input tpye="text" class="form-control" placeholder="Mahalle">
+                </div>
+                <div class="col">
+                    <input tpye="text" class="form-control" placeholder="Posta Kodu">
+                </div>
+            </div>
+        </form>
+        <hr>
+        <h2 class="text-center"> Horizontal Form </h2>
+        <form>
+            <div class="form-group row">
+                <label for="email" class="col-sm-1"> E-Mail: </label>
+                <div class="col-sm-11">
+                   <input type="text" id="email" name="email" class="form-control"> 
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="parola" class="col-sm-1"> Parola: </label>
+                <div class="col-sm-11">
+                   <input type="password" id="parola" name="parola" class="form-control"> 
+                </div>
+            </div>
+        </form>
+        <hr>
+        <h2 class="text-center"> Inline Form </h2>
+        <form class="form-inline">
+            <label for="inlineFormInputName" class="sr-only">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName"placeholder="Ad Soyad">
+
+            <label for="inlineFormInputuserName" class="sr-only" id="inlineFormInputuserName">Username</label>
+            <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputuserName"placeholder="Kullanıcı Adı">
+            </div>
+            <div class="form-group form-check mb-2 mr-sm-2">
+                <input type="checkbox" id="beniHatirla" name="beniHatirla" class="form-check-input">
+                <label for="beniHatirla" class="form-check-label">Beni Hatırla</label>
+            </div>
+            <button class="btn btn-primary mb-2">Giriş Yap</button>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap ile Modals</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center"> Bootstrap ile Modals </h1>
+    <hr>
+    <h2 class="text-center"> Modals</h2>
+    <div class="container">
+        <button class="btn btn-success" data-toggle="modal" data-target="#ornekModal">Giriş Yap</button>
+        <div id="ornekModal" class="modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel"> Giriş Yap </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"> &times; </span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST">
+                            <div class="form-group">
+                                <label for="email"> E-Mail </label>
+                                <input type="text" id="email" name="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="parola"> Parola </label>
+                                <input type="password" id="parola" name="parola" class="form-control">
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                        <button type="button" class="btn btn-primary">Giriş Yap</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
